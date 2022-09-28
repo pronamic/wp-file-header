@@ -25,3 +25,6 @@ Here is a list of alternatives that we found. However, none of these satisfied o
 - https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/
 - https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 - https://docs.npmjs.com/cli/v7/commands/npm-pkg
+- https://developer.wordpress.org/reference/functions/get_plugin_data/
+- https://developer.wordpress.org/reference/functions/get_file_data/
+- https://github.com/wp-cli/i18n-command/blob/v2.4.0/src/FileDataExtractor.php
