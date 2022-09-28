@@ -1,7 +1,25 @@
 #!/usr/bin/env php
 <?php
 
-require __DIR__ . '/../pronamic-wp-file-header.php';
+/**
+ * Autoload.
+ *
+ * @link https://stackoverflow.com/questions/12241903/script-in-dependency-needs-path-to-composer-autoloader
+ * @link https://gist.github.com/tburry/90ae5ba5bfa9140cfb53
+ * @link https://github.com/pronamic/wp-documentor/blob/main/bin/wp-documentor
+ */
+$paths = array(
+    __DIR__ . '/../vendor/autoload.php', // locally
+    __DIR__ . '/../../../autoload.php' // dependency
+);
+
+foreach ( $paths as $path ) {
+	if ( \is_readable( $path ) ) {
+		require_once $path;
+
+		break;
+	}
+}
 
 list( $script, $command ) = $argv;
 

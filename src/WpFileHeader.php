@@ -10,7 +10,7 @@ class WpFileHeader {
 	 * @param string $key  Key.
 	 * @return string
 	 */
-	public function get_value( $file, $key ) {
+	public static function get_value( $file, $key ) {
 		$file_data = \file_get_contents( $file, false, null, 0, 8 * 1024 );
 
 		if ( false === $file_data ) {
