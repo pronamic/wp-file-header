@@ -25,6 +25,9 @@
     },
     "scripts": {
         "test": [
+            "bin/pronamic-wp-file-header get Version tests/plugin.php",
+            "bin/pronamic-wp-file-header get 'Stable tag' tests/readme.txt",
+            "bin/pronamic-wp-file-header get Version tests/style.css",
             "bin/pronamic-wp-file-header set Version 1.0.0 tests/plugin.php",
             "bin/pronamic-wp-file-header set 'Stable tag' 1.0.0 tests/readme.txt",
             "bin/pronamic-wp-file-header set Version 1.0.0 tests/style.css"
