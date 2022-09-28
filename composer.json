@@ -1,6 +1,6 @@
 {
     "name": "pronamic/wp-file-header",
-    "description": "A command that automates the management of WordPress file headers.",
+    "description": "A library that makes the management of WordPress file headers easier.",
     "keywords": ["wordpress", "file", "header", "command", "cli", "plugin", "theme"],
     "license": "GPL-2.0-or-later",
     "authors": [

@@ -1,7 +1,7 @@
 <h1 align="center">Pronamic WordPress File Header</h1>
 
 <p align="center">
-	A command that automates the management of WordPress file headers.
+	Many WordPress plugins contain bash scripts with `sed` and `awk` commands to update WordPress file headers. Because `sed` and `awk` commands are difficult to read and can be error prone we have developed this library. This library makes it easy to read and/or edit WordPress file headers in for example `plugin.php`, `style.css` or `readme.txt`.
 </p>
 
 ## Table of contents
