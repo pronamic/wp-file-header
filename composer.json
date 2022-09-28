@@ -1,0 +1,26 @@
+{
+    "name": "pronamic/wp-file-header",
+    "description": "A command that automates the management of WordPress file headers.",
+    "keywords": ["wordpress", "file", "header", "command", "cli", "plugin", "theme"],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Pronamic",
+            "email": "info@pronamic.eu",
+            "homepage": "https://www.pronamic.eu/",
+            "role": "Company"
+        },
+        {
+            "name": "Remco Tolsma",
+            "email": "info@remcotolsma.nl",
+            "homepage": "https://www.remcotolsma.nl/",
+            "role": "Developer"
+        }
+    ],
+    "bin": [
+        "bin/pronamic-wp-file-header"
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}
