@@ -1,7 +1,7 @@
 <h1 align="center">Pronamic WordPress File Header</h1>
 
 <p align="center">
-	Many WordPress plugins contain bash scripts with `sed` and `awk` commands to update WordPress file headers. Because `sed` and `awk` commands are difficult to read and can be error prone we have developed this library. This library makes it easy to read and/or edit WordPress file headers in for example `plugin.php`, `style.css` or `readme.txt`.
+	Many WordPress plugins contain bash scripts with <code>sed</code> and <code>awk</code> commands to update WordPress file headers. Because <code>sed</code> and <code>awk</code> commands are difficult to read and can be error prone we have developed this library. This library makes it easy to read and/or edit WordPress file headers in for example <code>plugin.php</code>, <code>style.css</code> or <code>readme.txt</code>.
 </p>
 
 ## Table of contents
