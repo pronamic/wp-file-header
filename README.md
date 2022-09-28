@@ -6,8 +6,49 @@
 
 ## Table of contents
 
+- [Getting Started](#getting-started)
+- [Command Line Usage](#command-line-usage)
+  - [Examples](#examples)
 - [Alternatives](#alternatives)
 - [Links](#links)
+
+## Getting Started
+
+### Installation
+
+To start documenting your WordPress filters and actions, require Pronamic WordPress Documentor in Composer:
+
+```
+composer require pronamic/wp-file-header --dev
+```
+
+## Command Line Usage
+
+### Examples
+
+```
+vendor/bin/pronamic-wp-file-header get Version plugin.php
+```
+
+```
+vendor/bin/pronamic-wp-file-header get 'Stable tag' readme.txt
+```
+
+```
+vendor/bin/pronamic-wp-file-header get Version style.css
+```
+
+```
+vendor/bin/pronamic-wp-file-header set Version 1.0.0 plugin.php
+```
+
+```
+vendor/bin/pronamic-wp-file-header set 'Stable tag' 4.3 readme.txt
+```
+
+```
+vendor/bin/pronamic-wp-file-header set Version 1.3 style.css
+```
 
 ## Alternatives
 
