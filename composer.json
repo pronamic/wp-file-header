@@ -21,7 +21,18 @@
         "bin/pronamic-wp-file-header"
     ],
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Pronamic\\WpFileHeader\\": "src/"
+        }
+    },
+    "require-dev": {
+        "pronamic/wp-coding-standards": "^1.2"
     },
     "scripts": {
         "test": [

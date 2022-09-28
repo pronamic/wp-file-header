@@ -1,4 +1,39 @@
 #!/usr/bin/env php
 <?php
 
-echo 'Pronamic WordPress File Header', PHP_EOL;
+require __DIR__ . '/../pronamic-wp-file-header.php';
+
+list( $script, $command ) = $argv;
+
+switch ( $command ) {
+	case 'get':
+		list( $script, $command, $key, $file ) = $argv;
+
+		try {
+			$value = Pronamic\WpFileHeader\WpFileHeader::get_value( $file, $key );
+
+			echo $value, PHP_EOL;
+
+			exit( 0 );
+		} catch ( \Exception $e ) {
+			echo $e->getMessage();
+
+			exit( 1 );
+		}
+	case 'set':
+		list( $script, $command, $key, $value, $file ) = $argv;
+
+		try {
+			Pronamic\WpFileHeader\WpFileHeader::set_value( $file, $key, $value );
+
+			exit( 0 );
+		} catch ( \Exception $e ) {
+			echo $e->getMessage();
+
+			exit( 1 );
+		}
+	default:
+		printf( 'Unknown command: %s.', $command );
+
+		exit( 1 );
+}
