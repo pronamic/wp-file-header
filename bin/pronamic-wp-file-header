@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+
+echo 'Pronamic WordPress File Header', PHP_EOL;
